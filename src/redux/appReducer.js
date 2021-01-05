@@ -15,7 +15,9 @@ export const reducer = (state= initialState,action) => {
             return{
                 ...state,
                 loading: false,
-                movies: action.movies
+                movies: action.movies,
+                errorMessage: null
+
             }
         case "SET_ERROR":
             return{
